@@ -1,0 +1,29 @@
+/* Snowfall Heart CSS */
+.heart {
+    position: fixed;
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    z-index: 1000;
+    pointer-events: none;
+    animation: fall linear forwards;
+    opacity: 0.6;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+@keyframes sway {
+    0% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: 50px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
